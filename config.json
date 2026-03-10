@@ -1,0 +1,58 @@
+{
+  "Images": [
+    "jpg", "jpeg", "png", "gif", "bmp", "tiff", "tif", "webp", "svg", "heic", "heif", "ico", "raw", "psd", "ai"
+  ],
+
+  "Documents": [
+    "pdf", "doc", "docx", "txt", "rtf", "md", "tex", "epub", "mobi"
+  ],
+
+  "Spreadsheets": [
+    "xls", "xlsx", "ods", "csv", "tsv"
+  ],
+
+  "Presentations": [
+    "ppt", "pptx", "odp", "key"
+  ],
+
+  "Linux": [
+    "tar.gz", "tar.xz", "tar.bz2", "deb", "rpm", "run", "AppImage"
+  ],
+
+  "Archives": [
+    "zip", "rar", "7z", "tar", "gz", "bz2", "xz"
+  ],
+
+  "Audio": [
+    "mp3", "wav", "flac", "aac", "ogg", "m4a", "wma", "aiff", "alac"
+  ],
+
+  "Video": [
+    "mp4", "mkv", "mov", "avi", "wmv", "flv", "webm", "m4v", "mpg", "mpeg", "3gp"
+  ],
+
+  "Code": [
+    "py", "js", "ts", "cpp", "c", "h", "hpp", "java", "kt", "go", "rs", "rb",
+    "php", "swift", "scala", "sh", "bash", "ps1", "sql", "r", "matlab", "ipynb"
+  ],
+
+  "Web": [
+    "html", "htm", "css", "scss", "sass", "json", "xml", "yaml", "yml"
+  ],
+
+  "Executables": [
+    "exe", "msi", "apk", "bat", "cmd", "bin"
+  ],
+
+  "Fonts": [
+    "ttf", "otf", "woff", "woff2"
+  ],
+
+  "Disk_Images": [
+    "iso", "img", "dmg", "vhd", "vmdk"
+  ],
+
+  "Databases": [
+    "db", "sqlite", "sqlite3", "mdb", "accdb"
+  ]
+}

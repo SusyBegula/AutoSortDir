@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+
+import json
+from pathlib import Path
+import shutil
+
+config_file = Path.home() / ".config/autosort/config.json"
+
+with open(config_file, 'r') as file:
+    config = json.load(file)
+
+directory_path = Path('.')
+files = []
+directories = []
+
+for file in directory_path.iterdir():
+    if file.is_file():
+        files.append(file.name)
+
+for directory in directory_path.iterdir():
+    if directory.is_dir():
+        directories.append(directory.name)
+
+# recognized = {}
+
+for type in config:
+    folder_name = type
+    folder_path = Path(folder_name)
+    try:
+        folder_path.mkdir(parents=True, exist_ok=True)
+    except OSError as e:
+        print(f"Error creating directory: {e}")
+
+    for format in config[type]:
+        for file in files:
+            if file.endswith(format):
+                # recognized.setdefault(type, []).append(export/ file)
+                source = file
+                destination = f'{type}/{file}'
+
+                try:
+                    shutil.move(source, destination)
+                    print(f'File Move: {source} -> {destination}')
+                except FileNotFoundError:
+                    print(f'The source file or destination directory was not found.')
+                except Exception as e:
+                    print(f"An error occurred: {e}")
+                
